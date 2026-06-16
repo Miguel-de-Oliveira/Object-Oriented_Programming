@@ -6,9 +6,9 @@ public class AppMassaCorporea {
 		Scanner input = new Scanner(System.in);
 		MassaCorporea mc = new MassaCorporea();
 		
-		System.out.println("Peso..: ");
+		System.out.println("Peso..(kg): ");
 		mc.peso = input.nextDouble();
-		System.out.println("Altura: ");
+		System.out.println("Altura(m): ");
 		mc.altura = input.nextDouble();
 		//Chamar os métodos para usar os valores inseridos
 		mc.calcularImc();
