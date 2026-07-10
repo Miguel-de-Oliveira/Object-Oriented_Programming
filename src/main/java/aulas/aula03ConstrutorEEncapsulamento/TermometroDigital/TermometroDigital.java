@@ -5,16 +5,20 @@ public class TermometroDigital {
 	private String nrSerie;
 	private char tipo;
 	private String diagnostico;
-	
-	public String getDiagnostico() {
-		return diagnostico;
-	}
 
 	public TermometroDigital(String nrSerie, char tipo) {
 		this.nrSerie = nrSerie;
 		this.tipo = tipo;
 	}
 
+	public String getNrSerie() {
+		return nrSerie;
+	}
+	
+	public String getDiagnostico() {
+		return diagnostico;
+	}
+	
 	public double getTemperatura() {
 		return temperatura;
 	}
@@ -29,10 +33,6 @@ public class TermometroDigital {
 
 	public void setTemperatura(double temperatura) {
 		this.temperatura = temperatura;
-	}
-
-	public String getNrSerie() {
-		return nrSerie;
 	}
 	
 	public void aferirTemperatura(double temperatura) {
